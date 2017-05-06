@@ -318,6 +318,7 @@
     <Compile Include="Datastore\Migration\069_quality_proper.cs" />
     <Compile Include="Datastore\Migration\070_delay_profile.cs" />
     <Compile Include="Datastore\Migration\104_add_moviefiles_table.cs" />
+    <Compile Include="Datastore\Migration\139_consolidate_indexer_baseurl.cs" />
     <Compile Include="Datastore\Migration\096_disable_kickass.cs" />
     <Compile Include="Datastore\Migration\095_add_additional_episodes_index.cs" />
     <Compile Include="Datastore\Migration\103_fix_metadata_file_extensions.cs" />
@@ -690,6 +691,7 @@
     <Compile Include="Indexers\HDBits\HDBitsSettings.cs" />
     <Compile Include="Indexers\IIndexer.cs" />
     <Compile Include="Indexers\IIndexerRequestGenerator.cs" />
+    <Compile Include="Indexers\IIndexerSettings.cs" />
     <Compile Include="Indexers\IndexerBase.cs" />
     <Compile Include="Indexers\IndexerDefinition.cs" />
     <Compile Include="Indexers\IndexerFactory.cs" />
@@ -1370,7 +1372,7 @@
     <PostBuildEvent>
     </PostBuildEvent>
   </PropertyGroup>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
